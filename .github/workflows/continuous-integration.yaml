@@ -14,8 +14,6 @@ env:
   DOMAIN_NAME: www.patinando.site
   TERRAFORM_VERSION: 0.12.8
 
-  API_BASE_URL: "https://www.patinando.site"
-
 jobs:
 
   setup-build-deploy:
