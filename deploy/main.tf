@@ -17,20 +17,15 @@ variable "run_service_name" {
   type = string
 }
 
-variable "domain_name" {
-  type = string
-}
-
 variable "image" {
   type = string
 }
 
 module "cloud_run" {
-  source = "git::https://github.com/CallePuzzle/terraform-google-cloud-run.git?ref=1.1.0"
+  source = "git::https://github.com/CallePuzzle/terraform-google-cloud-run.git?ref=1.1.1"
 
   project = var.project
   region = var.region
   image = var.image
   run_service_name = var.run_service_name
-  domain_name = var.domain_name
 }
