@@ -43,7 +43,4 @@ module "cloud_run" {
   region = var.region
   image = var.image
   run_service_name = var.run_service_name
-  members_can_invoke = [
-    "serviceAccount:${data.google_compute_default_service_account.default.email}",
-  ]
 }
